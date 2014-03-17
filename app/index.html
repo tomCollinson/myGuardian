@@ -24,7 +24,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+    <div class="container">
+      <div ng-view></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -49,8 +51,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/ajax-call.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/section.js"></script>
         <!-- endbuild -->
 </body>
 </html>
