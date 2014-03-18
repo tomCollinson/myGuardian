@@ -1,5 +1,9 @@
-<div ng-repeat="item in data">
-  <strong>{{item.webTitle}}</strong>
-  <p></p>
-  
+<div ng-repeat="item in data" class="story">
+  <div class="story__img">
+    <span ng-if="item.fullStory === 'true'" class="story__full">Full Story</span>
+    <span ng-if="item.fullStory === undefined" class="story__full">External Link</span>
+    <img ng-src="{{item.fields.thumbnail}}"/>
+  </div>
+  <a ng-href="#/story/{{item.id}}"><strong ng-bind="item.webTitle"></strong></a>
+  <p ng-bind="item.fields.trailText | htmlToText"></p>
 </div>

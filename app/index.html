@@ -25,20 +25,21 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
+      <header class="heading" ng-controller="HeaderCtrl">
+        Guardian Lite
+        <nav class="main-nav navbar-default navbar">
+        <ul class="nav navbar-nav">
+          <li><a ng-href="#/section/football">All Football</a></li>
+          <li><a ng-href="#/section/football/premierleague">Premier League</a></li>
+          <li><a ng-href="#/section/football/laligafootball">La Liga</a></li>
+          <li><a ng-href="#/section/football/bundesligafootball">Bundesliga</a></li>
+          <li><a ng-href="#/section/football/serieafootball">Seria A</a></li>
+        </ul>
+        </nav>
+      </header>
       <div ng-view></div>
     </div>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
+    
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
@@ -50,12 +51,24 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
+        <script src="http://code.angularjs.org/1.1.5/angular-sanitize.min.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/filters.js"></script>
         <script src="scripts/services/ajax-call.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/section.js"></script>
+        <script src="scripts/controllers/story.js"></script>
+        <script src="scripts/controllers/header.js"></script>
+        
+        <script>
+          $('.nav li').on('click', function(){
+            $(this).parent().find('.active').removeClass('active');
+            $(this).addClass('active');
+          });
+        </script>
         <!-- endbuild -->
 </body>
 </html>

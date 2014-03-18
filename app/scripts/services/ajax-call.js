@@ -1,7 +1,7 @@
 guardianApp.factory('AjaxCall', function($http){
     return {
-        get : function(params){
-            return $http.jsonp('http://content.guardianapis.com/search', {
+        get : function(url,params){
+            return $http.jsonp(url, {
                 params : params
             });
         }
