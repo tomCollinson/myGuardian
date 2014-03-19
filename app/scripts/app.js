@@ -6,8 +6,8 @@ guardianApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        templateUrl: 'views/section.html',
+        controller: 'SectionCtrl',
       })
       .when('/story/:id*', {
         templateUrl: 'views/story.html',
@@ -29,5 +29,5 @@ guardianApp.run(function($rootScope) {
   $rootScope.key = 'sax7qx28cef235apyedq3v3v';
   $rootScope.showfields = 'all';
   $rootScope.format = 'json';
-  $rootScope.timeDiff = '5'
+  $rootScope.timeDiff = '5';
 });

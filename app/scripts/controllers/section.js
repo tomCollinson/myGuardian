@@ -10,8 +10,10 @@ angular.module('guardianApp')
 
     if ($routeParams.sectionRefined !== undefined) {
       sectionQuery = $routeParams.sectionName + '/' + $routeParams.sectionRefined;
-    } else {
+    } else if ($routeParams.sectionName !== undefined) {
       sectionQuery = $routeParams.sectionName;
+    } else {
+      sectionQuery = 'football';
     }
 
     localData = localStorageService.get(sectionQuery);
@@ -22,7 +24,6 @@ angular.module('guardianApp')
       timeDiff = (storedTime - dateTime);
 
       if (timeDiff >= ($rootScope.storageTime * 6000)) {
-        console.log('Time difference is greater than rootScope setting');
         return true
       }
 

@@ -1,6 +1,8 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'common';
+@import 'compass';
 
 .browsehappy {
     margin: 0.2em 0;
@@ -67,6 +69,14 @@ body {
     margin-top: 28px;
 }
 
+.page-header {
+  text-transform: capitalize;
+  h2 {
+  font-size: 2em;
+  color: $color-text-light;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
@@ -117,5 +127,75 @@ body {
      text-align: center;
      font-weight: bold;
     }
+    
+    .story__live{
+      background-color: red;
+      color: white;
+      font-size: 0.8em;
+      position: absolute;
+      top: 0;
+      right:0;
+      display: block;
+      padding: 0.2em;
+    }
   }
+  
+  p {
+    line-height: 2em;
+  }
+}
+
+.notice {
+  
+  padding: 0.5em 1em;
+  line-height: 1.4em;
+
+  &.notice--live {
+    background-color: #d43f3a; 
+    color: white; 
+    font-weight:bold; 
+  }
+}
+
+
+.story-full {
+  .notice--live {
+    float: right;
+  }
+  
+  .story__title {
+    font-weight: bold;
+  }
+  
+  p {
+    line-height: 1.8em;
+  }
+  
+  .block {
+    padding: .25em;
+    border-bottom: 5px solid #ccc;
+    margin-bottom: .5em;
+    
+    .block-time {
+      font-weight: bold;
+    }
+  }
+  
+  /* Class apllied to blockquotes*/
+  .quoted, .twitter-tweet {
+    font-family: $quotes-font-family;
+    font-style: italic;
+  }
+  
+  .quoted {
+    color: $color-text-light;
+    font-size: 1.2em;
+  }
+  
+  .twitter-tweet{
+    border-color: $color-tweet-border;
+    background-color: $color-tweet-bg;
+  }
+  
+  
 }
