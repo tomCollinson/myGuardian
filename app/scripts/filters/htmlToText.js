@@ -1,5 +1,7 @@
-guardian.filter('htmlToText',function(){
+'use strict';
+
+guardian.filter('htmlToText', function() {
   return function(text) {
     return String(text).replace(/<[^>]+>/gm, '');
-  }
+  };
 });

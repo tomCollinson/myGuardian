@@ -56,6 +56,17 @@ module.exports = function (grunt) {
         ]
       }
     },
+    
+    jsbeautifier: {
+        "default" : {
+          src : '<%= yeoman.app %>/scripts/{,*/}*.js',
+          options : {
+            js: {
+              indentSize: 2,
+              }
+            }
+          }
+    },
 
     // The actual grunt server settings
     connect: {
@@ -90,7 +101,6 @@ module.exports = function (grunt) {
         }
       }
     },
-
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
       options: {
@@ -146,10 +156,6 @@ module.exports = function (grunt) {
         ignorePath: '<%= yeoman.app %>/'
       }
     },
-
-
-
-
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {

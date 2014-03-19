@@ -12,6 +12,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -25,17 +26,7 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <header class="heading" ng-controller="HeaderCtrl">
-        Guardian Lite
-        <nav class="main-nav navbar-default navbar">
-        <ul class="nav navbar-nav">
-          <li><a ng-href="#/section/football">All Football</a></li>
-          <li><a ng-href="#/section/football/premierleague">Premier League</a></li>
-          <li><a ng-href="#/section/football/laligafootball">La Liga</a></li>
-          <li><a ng-href="#/section/football/bundesligafootball">Bundesliga</a></li>
-          <li><a ng-href="#/section/football/serieafootball">Seria A</a></li>
-        </ul>
-        </nav>
+      <header class="heading" ng-controller="HeaderCtrl" ng-include src="'views/header.html'">
       </header>
       <div ng-view></div>
     </div>
@@ -47,6 +38,9 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -55,6 +49,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
         <script src="http://code.angularjs.org/1.1.5/angular-sanitize.min.js"></script>
+        <script src="scripts/libs/angular-local-storage.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/filters.js"></script>
         <script src="scripts/services/ajax-call.js"></script>
@@ -69,6 +64,7 @@
             $(this).addClass('active');
           });
         </script>
+        <script src="scripts/directives/backbutton.js"></script>
         <!-- endbuild -->
 </body>
 </html>
