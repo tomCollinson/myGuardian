@@ -1,5 +1,5 @@
 <div class="page-header">
-          <h1>Guardian Football</h1>
+          <h1>myGuardian</h1>
           <h2 ng-bind="pageTitle"></h2>
 </div>
   <nav class="navbar navbar-default main-nav" role="navigation">
@@ -18,7 +18,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li ng-repeat="section in sections" ng-class="{active: isActive(section)}"><a href="#/section/{{section.path}}">{{section.title}}</a></li>
+          <li ng-repeat="section in sections" ng-class="{active: isActive(section), dropdown:section.subcategories !== undefined}">
+          
+          <a ng-if="section.subcategories !== undefined" ng-href="" class="dropdown-toggle" data-toggle="dropdown">{{section.title}} <b class="caret"></b></a>
+          
+          <a ng-if="section.subcategories === undefined" ng-href="#/section/{{section.path}}">{{section.title}}</a>
+              <ul class="dropdown-menu">
+                <li ng-repeat="subcat in section.subcategories"><a ng-class="{active: isActive(subcat)}" ng-href="#/section/{{subcat.path}}">{{subcat.title}}</a></li>
+              </ul>
+           
+          </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -1,22 +1,37 @@
 {
   "football": {
-    "title": "All Football",
-    "path"  : "football"
+    "title": "Football",
+    "path"  : "football",
+    "subcategories" : {
+      
+        "premierleague": {
+            "title" : "Premier League",
+            "path" : "football/premierleague"
+          },
+          "laliga": {
+            "title" : "La Liga",
+            "path" : "football/laligafootball"
+          },
+          "bundesliga" : {
+            "title" : "Bundeslia",
+            "path" : "football/bundesligafootball"
+          },
+          "seriea" : {
+            "title" : "Seria A",
+            "path" : "football/serieafootball"
+          }
+      }
   },
-  "premierleague": {
-    "title" : "Premier League",
-    "path" : "football/premierleague"
+  "politics": {
+    "title" : "Politics",
+    "path" : "politics"
   },
-  "laliga": {
-    "title" : "La Liga",
-    "path" : "football/laligafootball"
+  "media": {
+    "title" : "Media",
+    "path" : "media"
   },
-  "bundesliga" : {
-    "title" : "Bundeslia",
-    "path" : "football/bundesligafootball"
-  },
-  "seriea" : {
-    "title" : "Seria A",
-    "path" : "football/serieafootball"
+  "science": {
+    "title" : "Science",
+    "path" : "science"
   }
 }
