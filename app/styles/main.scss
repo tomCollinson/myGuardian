@@ -71,11 +71,24 @@ body {
 
 .page-header {
   text-transform: capitalize;
+  
   h2 {
   font-size: 2em;
   color: $color-text-light;
   }
+  
 }
+
+
+.navbar {
+  .navbar-brand {
+    display: inline;
+  }
+}
+
+.page-header h2 {
+      display: none;
+    }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -94,9 +107,18 @@ body {
     .header {
         margin-bottom: 30px;
     }
+    .navbar {
+      .navbar-brand {
+        display: none;
+      }
+    }
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
+    }
+    
+    .page-header h2 {
+      display: block;
     }
 }
 

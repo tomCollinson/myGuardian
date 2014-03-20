@@ -1,18 +1,16 @@
 'use strict';
 
 angular.module('guardianApp')
-  .controller('SectionCtrl', function($scope, AjaxCall, $rootScope, $routeParams, localStorageService) {
+  .controller('SectionCtrl', function($scope, AjaxCall, JsonCall,$rootScope, $routeParams, localStorageService) {
 
     var sectionQuery,
       localData,
       dateTime = new Date(),
       storedTime;
-
-    if ($routeParams.sectionRefined !== undefined) {
-      sectionQuery = $routeParams.sectionName + '/' + $routeParams.sectionRefined;
-    } else if ($routeParams.sectionName !== undefined) {
-      sectionQuery = $routeParams.sectionName;
-    } else {
+      
+    if ($rootScope !== undefined) {
+      sectionQuery = $rootScope.currentSection;
+    }else {
       sectionQuery = 'football';
     }
 

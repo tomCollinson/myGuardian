@@ -1,12 +1,11 @@
 'use strict';
 
-guardianApp.factory('AjaxCall', function($http) {
+guardianApp.factory('JsonCall', function($http) {
   return {
     get: function(url, params) {
-      return $http.jsonp(url, {
+      return $http.get(url, {
         params: params
       });
     }
   };
 });
-

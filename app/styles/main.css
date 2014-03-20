@@ -7714,21 +7714,31 @@ body {
 .page-header {
   text-transform: capitalize;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000375}}
 .page-header h2 {
   font-size: 2em;
   color: #575757;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000384}}
+.navbar .navbar-brand {
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000389}}
+.page-header h2 {
+  display: none;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000395}}
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003102}}
   .header,
   .marketing,
   .footer {
@@ -7737,38 +7747,48 @@ body {
   }
 
   /* Space out the masthead */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003107}}
   .header {
     margin-bottom: 30px;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003111}}
+  .navbar .navbar-brand {
+    display: none;
+  }
+
   /* Remove the bottom border on the jumbotron for visual effect */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003116}}
   .jumbotron {
     border-bottom: 0;
   }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003120}}
+  .page-header h2 {
+    display: block;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003125}}
 .main-nav {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003128}}
 .main-nav ul {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003133}}
 .story {
   overflow: hidden;
   margin-bottom: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003137}}
 .story .story__img {
   float: left;
   margin-right: .5em;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003142}}
 .story .story__img .story__full {
   position: absolute;
   bottom: 0;
@@ -7779,7 +7799,7 @@ body {
   text-align: center;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003153}}
 .story .story__img .story__live {
   background-color: red;
   color: white;
@@ -7790,60 +7810,60 @@ body {
   display: block;
   padding: 0.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003165}}
 .story p {
   line-height: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003170}}
 .notice {
   padding: 0.5em 1em;
   line-height: 1.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003175}}
 .notice.notice--live {
   background-color: #d43f3a;
   color: white;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003183}}
 .story-full {
   /* Class apllied to blockquotes*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003184}}
 .story-full .notice--live {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003188}}
 .story-full .story__title {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003192}}
 .story-full p {
   line-height: 1.8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003196}}
 .story-full .block {
   padding: .25em;
   border-bottom: 5px solid #ccc;
   margin-bottom: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003201}}
 .story-full .block .block-time {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003207}}
 .story-full .quoted, .story-full .twitter-tweet {
   font-family: Georgia, "Times New Roman", Serif;
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003212}}
 .story-full .quoted {
   color: #575757;
   font-size: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/guardian\/app\/styles\/main\.scss}line{font-family:\00003217}}
 .story-full .twitter-tweet {
   border-color: #c0cfe0;
   background-color: #e8f2ff;

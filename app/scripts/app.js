@@ -6,8 +6,10 @@ guardianApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/section.html',
-        controller: 'SectionCtrl',
+        redirectTo: function(routeParams,path,search){
+        return 'section/football'
+        }
+   
       })
       .when('/story/:id*', {
         templateUrl: 'views/story.html',
@@ -21,13 +23,13 @@ guardianApp.config(['$routeProvider',
         templateUrl: 'views/section.html',
         controller: 'SectionCtrl'
       })
-
   }
 ]);
 
-guardianApp.run(function($rootScope) {
+guardianApp.run(function($rootScope, JsonCall) {
   $rootScope.key = 'sax7qx28cef235apyedq3v3v';
   $rootScope.showfields = 'all';
   $rootScope.format = 'json';
   $rootScope.timeDiff = '5';
+
 });

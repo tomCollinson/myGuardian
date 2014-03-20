@@ -1,0 +1,22 @@
+{
+  "football": {
+    "title": "All Football",
+    "path"  : "football"
+  },
+  "premierleague": {
+    "title" : "Premier League",
+    "path" : "football/premierleague"
+  },
+  "laliga": {
+    "title" : "La Liga",
+    "path" : "football/laligafootball"
+  },
+  "bundesliga" : {
+    "title" : "Bundeslia",
+    "path" : "football/bundesligafootball"
+  },
+  "seriea" : {
+    "title" : "Seria A",
+    "path" : "football/serieafootball"
+  }
+}

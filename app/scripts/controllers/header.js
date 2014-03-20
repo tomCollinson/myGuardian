@@ -1,18 +1,25 @@
 'use strict';
 
-guardianApp.controller('HeaderCtrl', function($scope, $location, $route, $rootScope, $element) {
+guardianApp.controller('HeaderCtrl', function($scope, $location, $route, $rootScope, $element, JsonCall) {
 
-  $scope.navClass = function(page) {
-    var currentRoute = $location.path().substring(1) || 'section/football';
-    return page === currentRoute ? 'active' : '';
-  };
+  //$scope.pageTItle = 'All Football';
 
-  $scope.title = function(pageTitle) {
-    if (pageTitle === undefined) {
-      $scope.pageTitle = 'All Football';
-    } else {
-      $scope.pageTitle = pageTitle;
+  JsonCall.get('scripts/sectionConfig.json', {
+    }).then(function(response) {
+      $rootScope.sections = response.data;
+      $scope.section = $rootScope.sections;
+      console.log($rootScope.sections);
+    
+    });
+
+  $scope.isActive = function(item) {
+    if (item.path === $location.path().substring(9)){
+      $scope.pageTitle = item.title;
+      $rootScope.currentSection = item.path;
+      return true;
     }
+    
+      return false;
   }
-
+  
 });
