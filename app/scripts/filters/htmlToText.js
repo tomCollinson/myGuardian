@@ -1,6 +1,6 @@
 'use strict';
 
-guardian.filter('htmlToText', function() {
+guardianApp.filter('htmlToText', function() {
   return function(text) {
     return String(text).replace(/<[^>]+>/gm, '');
   };

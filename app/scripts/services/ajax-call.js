@@ -9,4 +9,3 @@ guardianApp.factory('AjaxCall', function($http) {
     }
   };
 });
-

@@ -1,9 +1,11 @@
 {
   "football": {
     "title": "Football",
-    "path"  : "football",
     "subcategories" : {
-      
+        "allFootball" : {
+          "title" : "All Football",
+          "path" : "football"
+          },
         "premierleague": {
             "title" : "Premier League",
             "path" : "football/premierleague"
