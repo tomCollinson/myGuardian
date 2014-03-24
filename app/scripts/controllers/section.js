@@ -32,15 +32,14 @@ guardianApp.controller('SectionCtrl', function($scope, AjaxCall, JsonCall, $root
   }
 
   function getData() {
-    AjaxCall.get('http://content.guardianapis.com/search', {
+    AjaxCall.get('query.php', {
       format: $rootScope.format,
-      'api-key': $rootScope.key,
       'show-fields': $rootScope.showfields,
       section: sectionQuery,
       callback: 'JSON_CALLBACK'
     }).then(function(response) {
       $scope.data = response.data.response;
-
+console.log(response);
       for (var i = 0; i < $scope.data.results.length; i += 1) {
         if ($scope.data.results[i].fields.body !== undefined && $scope.data.results[i].fields.body.length > 100) {
           $scope.data.results[i].fullStory = 'true';
