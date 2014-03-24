@@ -1,6 +1,6 @@
 <?php 
  
- $apiKey = "sax7qx28cef235apyedq3v3v";
+ $apiKey = "API Key Here";
  $query = $_SERVER['QUERY_STRING'];
  $url = "http://content.guardianapis.com/search";
  $queryUrl = $url . "?api-key=" . $apiKey . "&" . $query;

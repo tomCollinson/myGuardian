@@ -26,7 +26,6 @@ guardianApp.config(['$routeProvider',
 ]);
 
 guardianApp.run(function($rootScope) {
-  $rootScope.key = 'sax7qx28cef235apyedq3v3v';
   $rootScope.showfields = 'all';
   $rootScope.format = 'json';
   $rootScope.timeDiff = '5';
