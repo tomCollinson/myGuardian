@@ -26,7 +26,7 @@ guardianApp.controller('SectionCtrl', function($scope, AjaxCall, JsonCall, $root
     } else {
       return false;
     }
-    /* COmes back as undefined if the statement above fails */
+    /* Comes back as undefined if the statement above fails */
     return status;
 
   }
@@ -34,6 +34,7 @@ guardianApp.controller('SectionCtrl', function($scope, AjaxCall, JsonCall, $root
   function getData() {
     AjaxCall.get('query.php', {
       format: $rootScope.format,
+      type: 'section',
       'show-fields': $rootScope.showfields,
       section: sectionQuery,
       callback: 'JSON_CALLBACK'

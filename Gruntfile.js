@@ -288,6 +288,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
+            '*.php',
+            'scripts/sectionConfig.json',
             'views/{,*/}*.html',
             'bower_components/**/*',
             'images/{,*/}*.{webp}',
