@@ -19,7 +19,7 @@
             "path" : "football/bundesligafootball"
           },
           "seriea" : {
-            "title" : "Seria A",
+            "title" : "Serie A",
             "path" : "football/serieafootball"
           }
       }

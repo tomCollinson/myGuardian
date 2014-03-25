@@ -63,7 +63,7 @@ You can also have sub-categories which will be added to the main navigation in a
             "path" : "football/bundesligafootball"
           },
           "seriea" : {
-            "title" : "Seria A",
+            "title" : "Serie A",
             "path" : "football/serieafootball"
           }
       }
@@ -72,7 +72,7 @@ You can also have sub-categories which will be added to the main navigation in a
 
 ### query.php
 
-This file holds your Guardian API Key and sits between the application and the API whenever a call requires an API Key to be included. At present that is only when a section is being viewed.
+This file holds your Guardian API Key and sits between the application and the API whenever a call requires an API Key to be included.
 
 Change line 3:
 
