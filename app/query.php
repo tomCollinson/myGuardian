@@ -1,6 +1,6 @@
 <?php 
  
- $apiKey = "API_KEY";
+ $apiKey = "n76dazxksq8ucapnrz6fmc7n";
  $query = $_SERVER['QUERY_STRING'];
  $queryType = $_GET['type'];
  

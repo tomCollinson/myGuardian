@@ -1,12 +1,12 @@
 'use strict';
 
-guardianApp.controller('SectionCtrl', function($scope, AjaxCall, JsonCall, $rootScope, $routeParams, localStorageService) {
+guardianApp.controller('SectionCtrl', function($scope, AjaxCall, $rootScope, $routeParams, localStorageService) {
 
   var sectionQuery,
     localData,
     dateTime = new Date();
 
-  if ($rootScope !== undefined) {
+  if ($rootScope.currentSection) {
     sectionQuery = $rootScope.currentSection;
   } else {
     sectionQuery = 'football';
@@ -17,18 +17,15 @@ guardianApp.controller('SectionCtrl', function($scope, AjaxCall, JsonCall, $root
   function compareTime() {
 
     var storedTime = new Date(localData.storedTime),
-      timeDiff = Math.abs((storedTime - dateTime)),
-      status = false;
+      timeDiff = Math.abs((storedTime - dateTime));
 
     /*If statement seems fine*/
     if (localData.storedTime !== undefined && timeDiff > ($rootScope.timeDiff * 60000)) {
       return true;
     } else {
-      return false;
+      return;
     }
-    /* Comes back as undefined if the statement above fails */
-    return status;
-
+ 
   }
 
   function getData() {
@@ -40,7 +37,6 @@ guardianApp.controller('SectionCtrl', function($scope, AjaxCall, JsonCall, $root
       callback: 'JSON_CALLBACK'
     }).then(function(response) {
       $scope.data = response.data.response;
-console.log(response);
       for (var i = 0; i < $scope.data.results.length; i += 1) {
         if ($scope.data.results[i].fields.body !== undefined && $scope.data.results[i].fields.body.length > 100) {
           $scope.data.results[i].fullStory = 'true';
@@ -52,7 +48,6 @@ console.log(response);
       localStorageService.add(sectionQuery, $scope.data);
 
     });
-
 
   }
   /*
