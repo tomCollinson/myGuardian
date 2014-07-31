@@ -175,6 +175,7 @@ body {
     background-color: #d43f3a; 
     color: white; 
     font-weight:bold; 
+    @include border-radius(4px);
   }
 }
 

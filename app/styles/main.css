@@ -7820,56 +7820,61 @@ body {
   background-color: #d43f3a;
   color: white;
   font-weight: bold;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
-/* line 182, main.scss */
+/* line 183, main.scss */
 .story-full {
   /* Class apllied to blockquotes*/
 }
-/* line 183, main.scss */
+/* line 184, main.scss */
 .story-full .notice--live {
   float: right;
 }
-/* line 187, main.scss */
+/* line 188, main.scss */
 .story-full .story__title {
   font-weight: bold;
 }
-/* line 191, main.scss */
+/* line 192, main.scss */
 .story-full p {
   line-height: 1.8em;
 }
-/* line 195, main.scss */
+/* line 196, main.scss */
 .story-full .block {
   padding: .25em;
   border-bottom: 5px solid #ccc;
   margin-bottom: .5em;
 }
-/* line 200, main.scss */
+/* line 201, main.scss */
 .story-full .block .block-time {
   font-weight: bold;
 }
-/* line 206, main.scss */
+/* line 207, main.scss */
 .story-full .quoted, .story-full .twitter-tweet {
   font-family: Georgia, "Times New Roman", Serif;
   font-style: italic;
 }
-/* line 211, main.scss */
+/* line 212, main.scss */
 .story-full .quoted {
   color: #575757;
   font-size: 1.2em;
 }
-/* line 216, main.scss */
+/* line 217, main.scss */
 .story-full .twitter-tweet {
   border-color: #c0cfe0;
   background-color: #e8f2ff;
 }
 
-/* line 223, main.scss */
+/* line 224, main.scss */
 .navbar-collapse.in {
   overflow: visible;
 }
 
-/* line 227, main.scss */
+/* line 228, main.scss */
 .dropdown-toggle {
   cursor: pointer;
 }
