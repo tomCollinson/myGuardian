@@ -1,9 +1,10 @@
 # myGuardian
-========
 
-A beta release example of a simple Angular.js app which connects to the Guardian.com API and displays the last 10 stories for any categories specified.
+myGuardian is an Angular.js app which connects to the Guardian.com API and displays the last 10 stories for any categories specified in settings. When a story is available to view within the application the user will be taken to a new view, otherwise external stories are shown as such and link directly to the Guardian website.
 
-Responses from the Guardian API are stored either in localstorage or as cookies depending on browser support and uses this information until an admin defined time limit is reached and a fresh call is made and the stored data replaced.
+Category level responses from the Guardian API are stored either in the browsers local storage or as cookies depending on browser support and uses this information until an admin defined time limit is reached, at which point a fresh call is made and the stored data replaced.
+
+As of verson 1.0 live blogging or live sports coverage that's available to view within the application will automatically refresh the story's body content every 60 seconds.
 
 This project makes use of Sass Bootstrap.
 
